@@ -61,7 +61,21 @@ public class Java03_Extends {
         }
 
         // TODO 区分继承和组合
-
+        //继承是is关系，组合是has关系
+        /*
+        考察下面的Book类：
+        class Book {
+            protected String name;
+            public String getName() {...}
+            public void setName(String name) {...}
+        }
+        这个Book类也有name字段，那么，我们能不能让Student继承自Book呢？
+        class Student extends Book {
+            protected int score;
+        }
+        显然，从逻辑上讲，这是不合理的，Student不应该从Book继承，而应该从Person继承。
+        究其原因，是因为Student是Person的一种，它们是is关系，而Student并不是Book。实际上Student和Book的关系是has关系。
+        */
 
 
     }
