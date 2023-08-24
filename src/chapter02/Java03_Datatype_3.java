@@ -16,6 +16,6 @@ public class Java03_Datatype_3 {
         String s2 = "hello";
         String t = s2;
         s2 = "world";
-        System.out.println(t); // t是"hello"还是"world"?
+        System.out.println(t); // "hello"
     }
 }

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -13,5 +15,25 @@ public class Main {
             // for you, but you can always add more by pressing Cmd+F8.
             System.out.println("i = " + i);
         }
+
+        int[] scores = new int[]{88, 77, 51, 66};
+        Score s = new Score(scores);
+        s.printScores();
+        scores[2] = 99;
+        s.printScores();
+    }
+
+}
+
+class Score {
+    private int[] scores;
+
+    public Score(int[] scores) {
+        // this.scores = scores;
+        this.scores = Arrays.copyOf(scores, scores.length);
+    }
+
+    public void printScores() {
+        System.out.println(Arrays.toString(scores));
     }
 }
