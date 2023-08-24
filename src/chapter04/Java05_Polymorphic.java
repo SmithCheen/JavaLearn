@@ -18,6 +18,8 @@ public class Java04_Polymorphic_2 {
         }
         return total;
     }
+
+    // TODO 多态 允许添加更多类型的子类实现功能扩展，却不需要修改基于父类的代码
 }
 
 class Income {
