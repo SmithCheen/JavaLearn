@@ -1,6 +1,6 @@
 package chapter04;
 
-public class Java04_Polymorphic_2 {
+public class Java05_Polymorphic {
     public static void main(String[] args) {
         // 给一个有普通收入、工资收入和享受国务院特殊津贴的小伙伴算税:
         Income[] incomes = new Income[]{
