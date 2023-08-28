@@ -1,5 +1,8 @@
 package chapter06;
 
+import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
+
 public class Java02_Exception {
     public static void main(String[] args) {
 
@@ -41,6 +44,16 @@ public class Java02_Exception {
         }
         System.out.println(j);
 
+        byte[] bs = toGBK("中文");
+        System.out.println(Arrays.toString(bs));
+
+    }
+
+    static byte[] toGBK(String s) {
+
+        return s.getBytes("GBK"); // 尝试使用用默认编码
+
+        // java: 未报告的异常错误java.io.UnsupportedEncodingException; 必须对其进行捕获或声明以便抛出
 
     }
 }
