@@ -2,7 +2,7 @@ package chapter06;
 
 public class Java01_Exception {
     public static void main(String[] args) {
-        // TODO 错误
+        // TODO 常见错误
 
         // 1. 类型转换出现错误
         String s = "123";
